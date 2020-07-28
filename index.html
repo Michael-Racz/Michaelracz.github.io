@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title>Best website</title>
+<title>Front Page</title>
 <meta charset='UTF-8'>
 <meta name ='viewport' content='width-device-width, initial-scale=1'>
 <style>
-body {
+.body {
   font-family: Arial, Helvetica, sans-serif;
 }
   
@@ -46,16 +46,42 @@ body {
   background-color: #ddd; /* Grey background color */
   color: black; /* Black text color */
 }  
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+  }
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+/* Create to unequal columns that sit nexts to each other */
+/* Sdiebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+  
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
   
 </style>
 </head>
 <body>
 
 <div class="navbar">
-  <a href="#">Github</a>
-  <a href="#">Linkedin</a>
-  <a href="#">Codecademy</a>
-  <a href="#">Kaggle</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
   <a href="#" class="right">Link</a>
 </div>
   
@@ -63,6 +89,11 @@ body {
   <h1>Michael Racz</h1>
   <p>A website created by me</p>
   </div>
+
+<div class="row">
+  <div class="side"> . . .</div>
+  <div class="main"> . . .</div>
+</div>
   
 <h1>Shouts out to Tyler and the Will congrats on the new house buddy.</h1> 
 <p>I'm hosted with Github Pages</p>  
